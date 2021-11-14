@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+.body{
+    position: relative;
+}
+
+.main{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+#header{
+    width: 70%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    margin: auto;
+    color: #333;
+    background-color: #fff;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 185, 185);
+}
+
+/* .header #language, */
+#header #menu{
+    padding: 10px 15px;
+    font-size: 24px;
+}
+
+#header #menu:hover{
+   color: rgb(255, 0, 119);
+    background-color: #c2c7c3;
+}
+
+
+#header #title-header:hover{
+    color: rgb(255, 0, 119);
+}
+
+#header #language .language-icon {
+    padding: 10px 16px;   
+}
+
+#header #language .language-icon:hover{
+    background-color: #c2c7c3;
+    color: rgb(255, 0, 119);
+}
+
+.content{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex:1;
+}
+
+.content-section{
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    
+}
+
+.img-content{
+    height: 200px;
+    width: 100%;
+}
+
+.content .banhmi{
+    background: url('../Img/Banhmi.jfif') no-repeat;
+}
+
+.content .banhmi:hover{
+    background-image: url('../Img/Bànhmif2.jfif');
+    cursor: pointer;
+}
+
+.content .banhchung{
+    background: url('../Img/banhchung2.jfif') no-repeat;
+}
+
+.content .banhchung:hover{
+   background: url('../Img/BanhChung.jfif') no-repeat;
+   cursor: pointer;
+}
+
+.content .thitkhotau{
+   background: url('../Img/Thitkhotau.jfif') no-repeat;
+}
+
+.content .thitkhotau:hover{
+   background: url('../Img/thitkhotau3.jfif') no-repeat;
+   cursor: pointer;
+}
+
+.content .pho{
+   background: url('../Img/Pho.jfif') no-repeat;
+}
+
+.content .pho:hover{
+   background: url('../Img/Phơ2.jfif') no-repeat;
+}
+
+.content .bun{
+   background: url('../Img/bun2.jfif') no-repeat;
+}
+
+.content .bun:hover{
+   background: url('../Img/Bun.jfif') no-repeat;
+}
+
+.content .buncha{
+   background: url('../Img/Buncha.jfif') no-repeat;
+}
+
+.content .buncha:hover{
+   background: url('../Img/BunCha2.jfif') no-repeat;
+}
+
+.content .content-heading{
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.content .content-text{
+    text-align: justify;
+    line-height: 1.15;
+    padding-left: 8px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+.page .icon-angle,
+.page .number-page{
+    padding: 8px 16px;
+    margin-left: 5px;
+}
+
+.page .icon-angle:hover ,
+.page .number-page:hover{
+    background-color: rgba(0, 0, 0, 0.575);
+    color: #fff;
+}
+
+.page .page-one{
+    background-color: rgba(0, 0, 0, 0.575);
+    color: #fff;
+}
+
+#sidebar{
+    background-color: rgb(226, 250, 242);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height:100% ;
+    position: fixed;
+} 
+
+#sidebar #menu-sidebar{
+    list-style-type: none;
+}
+
+#sidebar #menu-sidebar a{
+    text-decoration: none;
+}
+
+#sidebar .menu-items {
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+#sidebar a{
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+
+#menu-sidebar .menu-items:hover a{
+    background-color: #e7f1e9;
+    color: red;  
+}
+
+.slider{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    border-bottom: 2px inset #c2c7c3;
+}
+
+.slider .img-slider{
+    width: 100%;
+}
+
+.slider-content{
+   padding-top: 24px;
+
+}
+
+.slider-title{
+   padding: 16px;
+}
+
+.slider-text{
+   line-height: 1.2;
+   text-align: justify !important;
+   padding: -1px 20px;
+   font-size: 16px;
+}
+
+.footer{
+   padding: 45px 20px;
+   background-color: rgb(252, 246, 246);
+   display: flex;
+   
+}
+
+.footer .footer-contact a{
+    text-decoration: none;
+    color: blue;
+}
+
+.footer .footer-cre a{
+    text-decoration: none;
+    color: #333;
+}
+
+.footer .footer-contact a:hover,
+.footer .footer-cre a:hover{
+    color: red;
+    opacity: 0.9;
+}
+
+.footer-contact{
+    flex-grow: 1.5;
+    
+}
+
+.footer-cre{
+    margin-left: 16px;
+    flex-grow:.5;
+    color: #333;
+    
+}
+
+.footer-sologan{
+    align-items: flex-end;
+    flex-grow: 2;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.footer-sologan:hover{
+    color: rgb(194, 69, 69);
+}
+
+.footer-cre .git-icon{
+    margin-bottom: 8px;
+    display: inline-block;
+    
+}
+
+.footer-icon{
+    padding: 3px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 1024px){
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+    .main{
+        width: 90%;
+    }
+
+    #header{
+        width: 90%;
+    }
+
+    .content .content-section{
+        width: 45%;
+    }
+    
+    .footer .footer-cre{
+        flex-grow: 1;
+    }
+
+    .footer .footer-sologan{
+        font-size: 18px;
+    }
+
+    #sidebar{
+        top:46px;
+        height: 30%;
+        width:30%;
+    }
+}
+
+@media (max-width: 739px){
+    .main{
+        width: 100%;
+    }
+
+    #header{
+        width: 100%;
+    }
+
+    #header #title-header{
+        color: red;
+    }
+
+    .content .content-section{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content .content-heading{
+        margin-top: 0;
+    }
+
+    #header #title-header{
+        font-size: 15px;
+    }
+
+    #header #language .language-icon{
+        padding: 14px 10px;
+    }
+    
+    #sidebar{
+        width: 60%;
+        height: 35%;
+        top: 46px;
+    }
+
+    .slider-content{
+        margin: 0 15px;
+    }
+
+    .slider{
+        padding-bottom: 80px;
+    }
+   
+    .footer{  
+    padding: 21px 10px;
+    flex-direction: column;
+    }
+
+    .footer .footer-items{
+        padding: 8px 0;
+        
+    }
+
+    .footer .footer-sologan{
+        order: 1;
+        text-align: center;
+        color: rgb(194, 69, 69);;
+    }
+
+    .footer .footer-contact{
+        order: 2;
+    }
+
+    .footer .footer-cre{
+        order: 3;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .footer .footer-icon{
+        padding: 8px 10px;
+        font-size: 24px;
+    }
+  
+    .footer .footer-cre{
+        display: flex;
+        align-content: center;
+    }
+    
+    .footer-cre .git-icon{
+        
+    }
+}
+
+
+
